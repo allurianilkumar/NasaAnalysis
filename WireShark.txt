@@ -1,0 +1,90 @@
+1- List at least 5 different domain names; e.g. google.com 
+ 
+Ans:
+
+The Open the traceAssign5.PCAPNG file in  the wire shark tool in the Windows 10 operating  system. I have to the  seen the NASA tracking record file. i.e traceAssign5.PCAPNG.
+
+When you enable name  resolution (Edit- Preferences-Name Resolution), and then click on Resolve network(IP) address checkbox., finally click “Ok” button.In wireshark, type the ‘http.host’ in the  filter text box. We are getting the host names automatically  buttom of the filter.
+
+These are as follow.
+
+538	20.812661	10.115.4.7	Amazon.com	HTTP	828	GET / HTTP/1.1
+80	17.535114	10.115.4.7	clients.l.google.com	OCSP	487	Request
+495	19.100503	10.115.4.7	cs9.wac.phicdn.net	OCSP	489	Request
+42	15.282884	10.115.4.7	d2tpbry8f62bv9.cloudfront.net	HTTP	346	GET /success.txt HTTP/1.1
+5112	23.643594	10.115.4.7	e8218.dscb1.akamaiedge.net	OCSP	484	Request
+Wireshark will resolve ip addresses to hostnames when the capture file contains DNS traffic or when you have a hosts file in your profile that maps ip addresses to hostnames.
+
+All protocol and field names are entered in lowercase. Also, don’t forget to 
+press enter after entering the filter expression.
+
+
+2- List the types of protocols you find in the captured data files.
+Ans:
+
+
+The Computers to communicate with one another, standard methods of information transfer and processing have been devised. These are referred to as "protocols" and some of the more common ones such as TCP, IP, UDP, POP, SMTP, HTTP, and FTP are discussed here.
+
+
+TCP (Transmission Control Protocol) and IP (Internet Protocol) are two different procedures that are often linked together
+
+
+Another member of the TCP/IP suite is User Datagram Protocol (UDP). (A datagram is almost the same as a packet except that sometimes a packet will contain more than one datagram.) This protocol is used together with IP when small amounts of information are involved.
+
+Mail Protocols POP3 and SMTP:
+Email requires its own set of protocols and there are a variety, both for sending and for receiving mail. The most common protocol for sending mail is Simple Mail Transfer Protocol (SMTP). When configuring email clients, an Internet address for an SMTP server must be entered. The most common protocol used by PCs for receiving mail is Post Office Protocol(POP)
+
+Hypertext Transfer Protocol: 
+Web pages are constructed according to a standard method called Hypertext Markup Language (HTML). An HTML page is transmitted over the Web in a standard way and format known as Hypertext Transfer Protocol (HTTP). This protocol uses TCP/IP to manage the Web transmission.
+
+
+File Transfer Protocol: File Transfer Protocol (FTP) lives up to its name and provides a method for copying files over a network from one computer to another.
+
+3.What is the most frequent protocol that is used in the network
+Ans:-
+
+Internet Protocol Suite (commonly known as TCP/IP) is the set of communications protocols used for the Internet and other similar networks. The Internet Protocol Suite, like many protocol suites, may be viewed as a set of layers.
+
+4. What is the length of the longest request?
+Ans:
+This is largely dependent on the webserver. Browsers have no clear limit on POST data size.
+
+5- What is the IP address of android-6f203e4a97240a63.google.com.
+I have used the command : ping android-6f203e4a97240a63.google.com
+Output:
+
+Ping request could not find host android-6f203e4a97240a63.google.com. Please check the name and try again.
+a. What is the IP address of dns1.google.com
+Ans: In this  host name have  to find the ip  address, So I need a ping command for  finding  the ip address.
+ping   dns1.google.com
+output:-
+Pinging dns1.google.com [10.1.0.19] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 10.1.0.19:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss)
+
+6.What website this filter reveals? eth.src == 7c:b0:c2:62:89:41
+Ans: 
+
+I have used the two command for filter expression.
+
+eth.addr eq 7c:b0:c2:62:89:41
+		( or)
+eth.src == 7c:b0:c2:62:89:41
+If you are using a display filter of eth.addr == xx:xx:xx:xx:xx:xx and you are not seeing any information being displayed/sniffed, then the traffic for that MAC address is not passing through the port you're sniffing on.
+
+
+7. If you examine this file using WireShark, you can see that some images were requested/accessed.
+
+a. From packet number 216, save this image and then open the image and describe what it is about.
+
+Ans: Open the web.cap file in wireshark. I have to use the filter expression type the command http.content_type == "image/gif" .  Then press enter key, we get the all requested/accessed information on the bottom of the filter expression. It contains the packet number 216, I have saved the all information into the image_wireshark. As follow these steps.
+
+Click on Files export objects HTTP click on it.
+Select the file “donanweb.jpg” of packet number 216, and then click on the save button. Finally get the image “donanweb.jpg” on the desktop.
+
+This is image have a 22 kb size and of the name donanweb.jpg.  packet is 216, hostname is www.electricscotland.com. It is a scenery image.
